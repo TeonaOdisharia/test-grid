@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Skranji&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 20vh 1fr;
+    grid-template-areas:
+        "aside header"
+        "aside main";
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.header {
+    background-color: white;
+    grid-area: header;
+}
+
+.aside {
+    background-color: #1992D4;
+    grid-area: aside;
+    padding: 3vh;
+}
+
+.main {
+    background-color: #E2E8F0;
+    grid-area: main;
+    padding-top: 2vh;
+    padding-left: 1.5vw;
+    display: flex;
+
+}
+
+.title {
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 27vw);
+    grid-template-rows: repeat(3, 22vh);
+    gap: 3vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1vh;
+    padding: 2vh 3vh 2vh 3vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left: .7vw solid #F0B429;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-right-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.long-card {
+    height: 32vh;
+    width: 15vw;
+}
+
+
+.title-btm {
+    margin: 0;
+    margin-top: 3.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 0.5vh;
+}
+
+.card-content {
+    font-style: 1.2rem;
+    margin: .5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.cards-icons {
+    display: flex;
+    justify-content: right;
+}
+
+.card-icon {
+    width: 1.5vw;
+    margin-right: 0.5vw;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 5vh;
+}
+.logo-img{
+    height: 3vh;
+}
+
+.logo-title{
+    color: white;
+    margin-left: 1vw;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+li, a{
+    all:unset;
+}
+
+.menu-img{
+    height: 3vh;
+   
+}
+
+.menu-item{
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-link{
+    color: white;
+    font-weight: 600;
+    margin-left: 2vh;
+    cursor: pointer;
+}
